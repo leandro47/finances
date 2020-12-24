@@ -6,14 +6,26 @@
                     <h1 class="text-finances">Finances</h1>
                 </div>
                 <div class="card-body">
-                    <form>
+
+                    <?php if (isset($validation)) : ?>
+
+                    <div class="alert alert-<?= $validation['data']['status'] ?> alert-dismissible fade show" role="alert">
+                        <strong>Algo deu errado!</strong> <?= $validation['message'] ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <?php endif; ?>
+
+                    <form method="POST" action="<?= base_url('login') ?>">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Usuário</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <label for="user">Usuário</label>
+                            <input type="text" class="form-control" name="user" id="user" aria-describedby="emailHelp" placeholder="Digite seu usuário">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Senha</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <label for="password">Senha</label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Entrar</button>
                     </form>

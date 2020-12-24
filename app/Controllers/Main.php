@@ -4,15 +4,23 @@ namespace App\Controllers;
 
 class Main extends BaseController
 {
-	public function index()
+	public function __construct()
 	{
-		echo view('includes/header', $this->datas);
-		echo view('includes/menu', $this->datas);
-		echo view('dashboard/welcome', $this->datas);
-		echo view('includes/footer', $this->datas);
-		echo view('includes/scripts', $this->datas);
+		$this->data['titlePage'] = 'Login';
 	}
 
-	//--------------------------------------------------------------------
+	// ==================================================
+
+	public function index()
+	{
+		echo view('includes/header', $this->data);
+		echo view('includes/menu', $this->data);
+		echo view('dashboard/welcome', $this->data);
+		echo view('includes/footer', $this->data);
+		echo view('includes/scripts', $this->data);
+	}
+
+	// ==================================================
+
 
 }
