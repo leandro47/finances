@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controllers;
 
 /**
@@ -26,7 +27,7 @@ class BaseController extends Controller
 	 *
 	 * @var array
 	 */
-	protected $helpers = [];
+	protected $helpers = ['form', 'url', 'text', 'html', 'utils_helper'];
 
 	/**
 	 * Constructor.
@@ -40,7 +41,7 @@ class BaseController extends Controller
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
 		// E.g.:
-		$this->session = \Config\Services::session();
+		$session = \Config\Services::session();
+		$request = \Config\Services::request();
 	}
-
 }
