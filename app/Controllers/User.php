@@ -31,9 +31,9 @@ class User extends BaseController
 		if ($this->validate) {
 
 			$this->data['validation'] = $this->validate;
-
 			$this->index();
 		} else {
+
 			$userServices = new UserServices();
 
 			$result = $userServices->auth($this->request);

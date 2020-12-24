@@ -6,7 +6,7 @@ class Main extends BaseController
 {
 	public function __construct()
 	{
-		$this->data['titlePage'] = 'Login';
+		$this->data['titlePage'] = 'Home';
 	}
 
 	// ==================================================
@@ -21,6 +21,5 @@ class Main extends BaseController
 	}
 
 	// ==================================================
-
 
 }
