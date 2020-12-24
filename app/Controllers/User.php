@@ -13,7 +13,10 @@ class User extends BaseController
 
 	public function index()
 	{
-		
+		echo view('includes/header', $this->datas);
+		echo view('user/login', $this->datas);
+		echo view('includes/footer', $this->datas);
+		echo view('includes/scripts', $this->datas);
 	}
 
 	//--------------------------------------------------------------------

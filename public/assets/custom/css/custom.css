@@ -1,0 +1,11 @@
+.tela-centro {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-finances {
+    color: rgb(182, 97, 228) !important;
+}
