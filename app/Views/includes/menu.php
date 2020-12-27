@@ -39,6 +39,12 @@
                         <a class="dropdown-item" type="button">Categorias</a>
                     </div>
                 </li>
+                <li>
+                    <a href="">
+                        <i class="tim-icons icon-notes"></i>
+                        Extrato
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

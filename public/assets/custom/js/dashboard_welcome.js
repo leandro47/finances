@@ -96,7 +96,6 @@ if ($('#dashboard_welcome').length) {
                     white_color = true;
                 }
 
-
             });
 
             $('.light-badge').click(function () {
@@ -111,9 +110,13 @@ if ($('#dashboard_welcome').length) {
 
     // =====================================================
     $(document).ready(function () {
-        // Javascript method's body can be found in assets/js/demos.js
+        // Load config of charts
         demo.initDashboardPageCharts();
 
+        // load charts custom
+        chartMovementsMonthly();
+        ChartBarChartCategory();
+        ChartBarChartAccount();
     });
 
     // ===================================================
