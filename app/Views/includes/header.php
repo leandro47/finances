@@ -18,12 +18,17 @@
 
     <!-- CSS Files -->
     <link href="<?= base_url() ?>/assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/dt-1.10.23/datatables.min.css">
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="<?= base_url() ?>/assets/demo/demo.css" rel="stylesheet" />
 
     <!-- CSS custom made by Leandro Silva  -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/custom/css/custom.css">
+
+    <script>
+        const BASE_URL = "<?= base_url('') ?>"
+    </script>
 </head>
 
 <body>

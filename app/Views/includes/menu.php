@@ -35,7 +35,7 @@
                         <p>Cadastro</p>
                     </a>
                     <div class="dropdown-menu dropdown-black">
-                        <a class="dropdown-item" type="button">Conta</a>
+                        <a class="dropdown-item" href="<?= base_url('account/show') ?>" type="button">Conta</a>
                         <a class="dropdown-item" type="button">Categorias</a>
                     </div>
                 </li>

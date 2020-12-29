@@ -3,7 +3,7 @@
   <script src="<?= base_url() ?>/assets/js/core/popper.min.js"></script>
   <script src="<?= base_url() ?>/assets/js/core/bootstrap.min.js"></script>
   <script src="<?= base_url() ?>/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-
+  <script src="http://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
   <!-- Chart JS -->
   <script src="<?= base_url() ?>/assets/js/plugins/chartjs.min.js"></script>
 
@@ -28,3 +28,6 @@
 
   <!-- dashboard/welcome  -->
   <script src="<?= base_url('assets/custom/js/dashboard_welcome.js') ?>"></script>
+
+  <!-- account/index  -->
+  <script src="<?= base_url('assets/custom/js/account_index.js') ?>"></script>
